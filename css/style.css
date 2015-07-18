@@ -168,6 +168,13 @@ hr {
   color: #f8f8f8;
   text-shadow: 2px 2px #0c1710;
 }
+.intro-social-buttons li a {
+    width:150px;
+}
+.intro-social-buttons li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 
 /* Services */
 
