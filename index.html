@@ -1,72 +1,272 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+	<head>
+		<title>Porfolio Site | Xavier Agostini</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Front-End Devloper who loves creating custom websites and apps">
+		<meta name="keywords" content="front-end developer, front-end engineer, front-end development, Toronto, Canada, web development">
+		<link rel="icon" href="images/favicon.ico">
+		<link rel="stylesheet" href="dist/styles.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<nav class="navbar navbar-toggleable-md navbar-inverse bg-primary" id="myNavBar">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand" href="#">Xavier <br>Agostini</a>
+			<div class="collapse navbar-collapse container justify-content-end" id="navbarNavDropdown">
+				<ul class="nav navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="#portfolio">Portfolio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#info">Info</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- Welcome -->
+		<section class="jumbotron jumbotron-fluid" id="welcome-screen">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div id="welcome-message">
+							<h1 class="diplay-3">Front-End Developer</h1>
+							<p class="lead">Hello I'm Xavier Agostini. Welcome to my website</p>
+							<hr>
+							<p>I'm a recent Electrical Engineering grad from McGill University who prefers coding over soldering. I'm a self taught developer with 3 years of experience creating and customizing websites as a freelance devloper.</p>
+							
+						</div>
+						<div id="goDown">
+							<a href="#portfolio"><span class="fa fa-chevron-down"></span></a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</section>
 
-<head>
+		
+		
+		<!-- Porfolio -->
+		<section id="portfolio" class="container-fluid">
+			
+			<h1 class="section-title">Portfolio</h1>
+			<hr>
+				
+			
+			<div class="row">
 
-  <meta charset="utf-8">
+				<div class="col-lg-4 col-md-6 col-sm-12">
 
-  <meta name="description" content="Portfolio Website">
-  <meta name="author" content="Xavier Agostini">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="Xavier,Agostini, HTML, CSS, Freelancer, Developer">
+					<div class="portfolio-item" style="background-image: url('./images/portfolio-images/paycom.png')">
+						<!-- <div class="test"></div> -->
+						<div class="item">
+							<h1 class="item-title">Paycom App</h1>
+							<div class="item-description">Chrome extension for automatic login and time tracking in Paycom time management system</div>
+							<ul class="item-stack">
+								<li>HTML5</li>
+								<li>CSS3</li>
+								<li>Bootstrap</li>
+								<li>Javascript</li>
+								<li>Chrome Extension</li>
+							</ul>
+							<!-- <br>	 -->
+							<a href="https://github.com/XavierAgostini/Paycom-Extension" class="btn btn-warning item-btn" target="_blank">View Project</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="portfolio-item" style="background-image: url('./images/portfolio-images/breakout.png')">
+						<div class="item">
+							<h1 class="item-title">Breakout Game</h1>
+							<div class="item-description">My interpretation of the classic Atari arcade game</div>
+							<ul class="item-stack">
+								<li>Javascript</li>
+								<li>ES2015</li>
+								<li>HTML5</li>
+							</ul>
+							<!-- <br>	 -->
+							<a href="https://github.com/XavierAgostini/breakoutGame" class="btn btn-warning item-btn" target="_blank">View Project</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="portfolio-item" style="background-image: url('./images/portfolio-images/timer.png')">
+						<div class="item">
+							<h1 class="item-title">React Timer</h1>
+							<div class="item-description">Timer and countdown clock web app built using React.js</div>
+							<ul class="item-stack">
+								<li>HTML5</li>
+								<li>CSS3</li>
+								<li>Foundation</li>
+								<li>Javascript</li>
+								<li>React.js</li>
+								<li>Webpack</li>
+							</ul>
+							<!-- <br>	 -->
+							<a href="https://github.com/XavierAgostini/reactTimer" class="btn btn-warning item-btn" target="_blank">View Project</a>
+						</div>
+					</div>
+				</div>
+			<!-- </div>
+			
+			<div class="row"> -->
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="portfolio-item" style="background-image: url('./images/portfolio-images/todoApp.png')">
+						<div class="item">
+							<h1 class="item-title">Todo</h1>
+							<div class="item-description">Todo list web app built using React.js</div>
+							<ul class="item-stack">
+								<li>HTML5</li>
+								<li>CSS3</li>
+								<li>Foundation</li>
+								<li>Javascript</li>
+								<li>React.js</li>
+								<li>Redux</li>
+								<li>Webpack</li>
+							</ul>
+							<!-- <br>	 -->
+							<a href="https://github.com/XavierAgostini/reactTodo" class="btn btn-warning item-btn" target="_blank">View Project</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="portfolio-item" style="background-image: url('./images/portfolio-images/weather.png')">
+						<div class="item">
+							<h1 class="item-title">React Weather</h1>
+							<div class="item-description">Weather App built using React.js</div>
+							<!-- <br>	 -->
+							<ul class="item-stack">
+								<li>HTML5</li>
+								<li>CSS3</li>
+								<li>Foundation</li>
+								<li>Javascript</li>
+								<li>React.js</li>
+								<li>Webpack</li>
+							</ul>
+							<a href="https://github.com/XavierAgostini/reactWeather" class="btn btn-warning item-btn" target="_blank">View Project</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="portfolio-item"  style="background-image: url('./images/portfolio-images/todoAPI.png')">
+						<div class="item">
+							<h1 class="item-title">Todo API</h1>
+							<div class="item-description">Todo API built using node.js and express.js following a CRUD architecture</div>
+							<!-- <br>	 -->
+							<ul class="item-stack">
+								<li>Javascript</li>
+								<li>node.js</li>
+								<li>express.js</li>
+								<li>SQL</li>
+							</ul>
+							<a href="https://github.com/XavierAgostini/todoAPI" class="btn btn-warning item-btn" target="_blank">View Project</a>
+						</div>
+					</div>
+				</div>
+		</section>
+		
+		<section id="info">
+			<div class="container-fluid">
+				<h1 class="section-title">My Stack</h1>
+				<hr>
+				<div class="row">
+					<div class="col-md-6 offset-md-3">
+						<div id="stack-info">
+							<div>
+								<h3>Front-End:</h3>
+								<button class="btn btn-outline-primary">HTML</button>
+								<button class="btn btn-outline-primary">CSS</button>
+								<button class="btn btn-outline-primary">Bootstrap</button>
+								<button class="btn btn-outline-primary">SCSS</button>
+								<button class="btn btn-outline-primary">Javascript</button>
+								<button class="btn btn-outline-primary">jQuery</button>
+								
+							</div>
+							<hr>
+							<div>
+								<h3>Back-End:</h3>
+								<button class="btn btn-outline-primary">node.js</button>
+								<button class="btn btn-outline-primary">PHP</button>
+								<button class="btn btn-outline-primary">SQL</button>
+							</div>
+							<hr>
+							<div>
+								<h3>Testing</h3>
+								<button class="btn btn-outline-primary">Unit Testing</button>
+								<button class="btn btn-outline-primary">Karma.js</button>
+								<button class="btn btn-outline-primary">Mocha.js</button>
+								<button class="btn btn-outline-primary">Selenium</button>
+							</div>
+							<hr>
+							<div>
+								<h3>Scripting:</h3>
+								<button class="btn btn-outline-primary">Python</button>
+							</div>
+							<hr>
+							<div>
+								<h3>Workflow:</h3>
+								<button class="btn btn-outline-primary">Gulp</button>
+								<button class="btn btn-outline-primary">Webpack</button>
+							</div>
+							<hr>
+							<div>
+								<h3>Programming:</h3>
+								<button class="btn btn-outline-primary">Java</button>
+								<button class="btn btn-outline-primary">C#</button>
+								<button class="btn btn-outline-primary">C++</button>
+							</div>
+							<hr>
 
-  <title>Xavier</title>
+							<div>
+								<h3>What i'm currently learning:</h3>
+								<button class="btn btn-outline-primary">React.js</button>
+								<button class="btn btn-outline-primary">ES2015</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+		</section>
+		<section id="contact">
+			<div class="container">
+				<h1 class="section-title">Contact Me</h1>
+				<hr>
 
-  <!-- Bootstrap Core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="icon" href="images/favicon.ico"/>
-  <!-- Custom CSS -->
-  <link href="css/style.css" rel="stylesheet">
-
-  <!-- Custom Fonts -->
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-</head>
-
-<body>
-<header id="top" class="header">
-  <div class="text-vertical-center">
-      <div class="container">
-          <h1 class="introMessage">Xavier Agostini</h1>
-          <h3 class="introMessage">Web-Dev Wizard in Training - Electrical Engineering Student</h3>
-          <hr class="intro-divider">
-          <ul class="list-inline intro-social-buttons">
-              <li>
-                  <a href="https://twitter.com/xagos" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-              </li>
-              <li>
-                  <a href="https://github.com/XavierAgostini" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-              </li>
-              <li>
-                  <a href="https://ca.linkedin.com/pub/xavier-agostini/a2/183/816" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-              </li>
-              <li>
-                  <a href="https://www.freelancer.com/u/xagos.html" class="btn btn-default btn-lg"><i class="fa fa-rocket fa-fw"></i> <span class="network-name">Freelancer</span></a>
-              </li>
-
-          </ul>
-          <hr class="intro-divider">
-          <p id="webMessage">Website is currently under construction. Please check again soon.</p>
-      </div>
-
-
-
-  </div>
-</header>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-63545608-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-
-
-</body>
-
+						<a href="https://github.com/xavieragostini" class="btn btn-outline-primary btn-lg"><span class="fa fa-github"></span> Github</a>
+						<a href="https://ca.linkedin.com/pub/xavier-agostini/a2/183/816" class="btn btn-outline-primary btn-lg"> <span class="fa fa-linkedin"></span> Linkedin</a>
+						<a href="https://www.freelancer.com/u/xagos.html" class="btn btn-outline-primary btn-lg">Freelancer</a>
+						
+				
+			</div>
+		</section>
+		<div id="toTop">
+			<a href="#welcome-screen"><span class="fa fa-chevron-up"></span></a>
+			<br>
+			<span>back to top </span>
+			
+		</div>
+		<footer>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col">
+						<div class="footer-message">© 2017 Xavier Agostini | <a href="https://github.com/XavierAgostini/PortfolioSite" target="_blank">Theme Source Code</a></div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/tether.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="dist/scripts.js"></script>
+	</body>
 </html>
