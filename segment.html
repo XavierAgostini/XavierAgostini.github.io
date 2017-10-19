@@ -33,6 +33,10 @@
   }}();
 </script>
      <script type="text/javascript">
+        var link = document.getElementById('testLink');
+        analytics.trackLink(link, 'Clicked Sample Link', {
+            link: link.href
+        })
       function identify(e){
         e.preventDefault();
         var form = e.target;
