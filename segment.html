@@ -10,6 +10,7 @@
 <h1>What is your favorite place to travel?</h1> 
 <p>I am building a directory of the sweetest travel destinations.</p>  
 <a href="http://www.google.com" target="_blank" id="testLink">Test Link</a>
+<button onclick="clickMe">Test</button>
 <form name="travel" onsubmit="identify(event)">
      What is your favorite travel destination?
     <input name="destination" required="" size="81" type="text"/> 
@@ -33,32 +34,11 @@
   analytics.page();
   }}();
 </script>
-     <script type="text/javascript">
-        var link = document.getElementById('testLink');
-        analytics.trackLink(link, 'Clicked Sample Link', {
-            link: link.href
-        })
-      function identify(e){
-        e.preventDefault();
-        var form = e.target;
-        var email = form["email"].value;
-        var fullname = form["fullname"].value;
-        var destination = form["destination"].value;
-        var details = form["details"].value;
-        var user = {
-            email: email, 
-            name: fullname, 
-            destination: destination, 
-            details: details
-        };
-        analytics.identify(12345, {
-            email: email, 
-            name: fullname
-        });
-        analytics.track('destination submitted', user, function() {
-            window.location.href = "";
-        });
+<script type="text/javascript">
+      function clickMe() {
+          analytics.track('Test');
       }
+      
 </script>
 </body> 
 </html>
