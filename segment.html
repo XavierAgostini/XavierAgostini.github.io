@@ -49,9 +49,9 @@
             email: email, 
             name: fullname
         });
-        analytics.track('destination submitted', user, function() {
-            window.location.href = "";
-        });
+        analytics.page('test page');
+        analytics.track('destination submitted', user);
+     
       }
 </script>
 </body> 
