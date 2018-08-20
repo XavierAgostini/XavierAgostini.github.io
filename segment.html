@@ -24,14 +24,14 @@
     <br><br>
     <input name="submit" type="submit" value="submit"/>
 </form> 
-    <button onClick="tes1t()">New Test 1</button>
-    <button onClick="test2()">New Test 2</button>
+    <button onClick="tes1t()">Test 1</button>
+    <button onClick="test2()">Test 2</button>
     <!--Placeholder for identify and track script -->
    <script>
        window.KM_SKIP_PAGE_VIEW = undefined;
   !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var o=document.getElementsByTagName("script")[0];o.parentNode.insertBefore(n,o);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
-//   analytics.load("pIoRDlp39HxjTc7obNq5fNKqhTB5IGkv");
-  analytics.load("F9LUUShvCTQuGKevSyRTm3BPZK8JtAdc");
+   analytics.load("pIoRDlp39HxjTc7obNq5fNKqhTB5IGkv");
+ // analytics.load("F9LUUShvCTQuGKevSyRTm3BPZK8JtAdc");
   analytics.page();
   }}();
 </script>
@@ -41,7 +41,9 @@
        analytics.page();   
       }
       function test2() {
-       analytics.track("test",{skipVal: window.KM_SKIP_PAGE_VIEW});
+       var skip = window.KM_SKIP_PAGE_VIEW;
+       if(!skip) skip = "skip"
+       analytics.track("test",{test: 1, skipVal: skip});
        analytics.page();
       }
       function identify(e){
