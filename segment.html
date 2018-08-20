@@ -24,6 +24,7 @@
     <br><br>
     <input name="submit" type="submit" value="submit"/>
 </form> 
+    <button onClick="test">Click</button>
     <!--Placeholder for identify and track script -->
    <script>
        window.KM_SKIP_PAGE_VIEW = undefined;
@@ -33,6 +34,10 @@
   }}();
 </script>
     <script type="text/javascript">
+      function test() {
+       window.KM_SKIP_PAGE_VIEW = undefined;
+       analytics.page();   
+      }
       function identify(e){
         e.preventDefault();
         var form = e.target;
