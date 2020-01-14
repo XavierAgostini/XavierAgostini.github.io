@@ -8,6 +8,7 @@
 </head> 
 <body> 
 <h1>What is your favorite place to travel?</h1> 
+<h2 id='timezone'></h2>
 <p>I am building a directory of the sweetest travel destinations.</p>  
 <form name="travel" onsubmit="identify(event)">
      What is your favorite travel destination?
@@ -36,6 +37,7 @@
   }}();
 </script>
     <script type="text/javascript">
+      document.getElementById('timezone').innerHTML(Intl.DateTimeFormat().resolvedOptions().timeZone);
       function test1() {
 //        window.KM_SKIP_PAGE_VIEW = undefined;
        analytics.page();   
